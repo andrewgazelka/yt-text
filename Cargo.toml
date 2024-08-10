@@ -1,0 +1,28 @@
+[package]
+name = "yt-text"
+version = "0.1.0"
+edition = "2021"
+authors = ["Andrew Gazelka <andrew.gazelka@gmail.com>"]
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0.86"
+tokio = { version = "1.39.2", features = ["full"] }
+regex = "1.10.6"
+reqwest = "0.11.27"
+serde_json = "1.0.122"
+html-escape = "0.2.13"
+itertools = "0.13.0"
+once_cell = "1.19.0"
+sys-locale = "0.3.1"
+
+[lints.rust]
+rust_2018_idioms = {level = "deny", priority = -1}
+
+[lints.clippy]
+complexity = {level = "deny", priority = -1}
+nursery = { level = "deny", priority = -1 }
+pedantic = {level = "deny", priority = -1}
+perf = {level = "deny", priority = -1}
+style = {level = "deny", priority = -1}
+suspicious = {level = "deny", priority = -1}
